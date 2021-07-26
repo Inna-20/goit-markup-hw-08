@@ -1,0 +1,105 @@
+.team-list .conteiner {
+  background-color: var(--button-font-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.team__employees {
+  margin-bottom: 30px;
+  @media screen and (max-width: 767px) {
+    margin-top: 30px;
+  }
+}
+.team {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+}
+
+.team__item {
+  width: 100%;
+  outline: 1px solid var(--border-color);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+  background-color: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 2);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 120px) / 4);
+    margin-left: 30px;
+  }
+}
+
+.team__title-list {
+  text-transform: capitalize;
+  color: var(--title-text-color);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.98;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  line-height: 100%;
+}
+.text__description {
+  margin-bottom: 0px;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  line-height: 100%;
+}
+.icons-list {
+  display: flex;
+  margin: 0 auto;
+  padding: 16px 32px 30px;
+  justify-content: center;
+}
+
+.icons-list__item {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+  &:hover .icon,
+  &:focus .icon {
+    fill: var(--white-color);
+    background-color: var(--accent-color);
+  }
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--icons-color);
+}

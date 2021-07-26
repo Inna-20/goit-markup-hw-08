@@ -1,0 +1,43 @@
+.logo {
+  display: flex;
+}
+
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  color: var(--accent-color);
+  @media screen and (max-width: 767px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}
+.studio {
+  color: var(--black-color);
+}
+/* Логотип футера */
+.footer .logo {
+  margin-bottom: 20px;
+  padding: 0;
+  @media screen and(max-width:1199px) {
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.footer .footer-studio {
+  color: var(--white-color);
+}
